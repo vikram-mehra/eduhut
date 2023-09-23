@@ -1,0 +1,1 @@
+<footer class="footer">Copyright ©2021 EdHut. All Rights Reserved</footer>

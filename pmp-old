@@ -1,0 +1,804 @@
+<?php include 'include/header2.php'; ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Online PMP Training certification is the most distinguished professional qualification for project managers offered by Project Management Institute (PMI)®.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *Must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Edhut - Project Management | PMP | PMP Certification | PMP Training</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon-2.png" alt="Online-PMP-Certification">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+        <style>
+        .single-course-intro {
+            position: relative;
+            z-index: -1;
+            width: 100%;
+            height: 416px;
+        }
+    </style>
+   </head>
+
+<body>
+
+    <!-- ##### Header Area Start ##### -->
+     <?php include 'include/header.php'; ?>
+    <!-- ##### Header Area End ##### -->
+
+
+    <!-- ##### Single Course Intro Start ##### -->
+    <div class="single-course-intro d-flex align-items-center justify-content-center" style="background-image: url(img/bg-img/pmp-banner-edhut.jpg);background-repeat:no-repeat;
+background-size:contain;
+background-position:center;">
+        <!-- Content -->
+        <!--<div class="single-course-intro-content text-center">
+            <h3>PMP Training</h3>
+        </div>-->
+    </div>
+    <!-- ##### Single Course Intro End ##### -->
+
+    <!-- ##### Courses Content Start ##### -->
+    <div class="single-course-content section-padding-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-12">
+                    <div class="course--content">
+
+                        <div class="clever-tabs-content">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="tab--1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="false">Overview</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="tab--2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="true">35-hours course</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="tab--3" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="true">Agenda</a>
+                                </li> 
+                                <li class="nav-item">
+                                    <a class="nav-link" id="tab--4" data-toggle="tab" href="#tab4" role="tab" aria-controls="tab4" aria-selected="true">Benefits</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="tab--5" data-toggle="tab" href="#tab5" role="tab" aria-controls="tab5" aria-selected="true">PMP Certification</a>
+                                </li>
+
+                            </ul>
+
+                            <div class="tab-content" id="myTabContent">
+                                <!-- Tab Text -->
+                                <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab--1">
+                                    <div class="clever-description">
+
+                                        <!-- About Course -->
+                                        <div class="about-course mb-30">
+                                            <h4>Overview</h4>
+                                            <p class="text-justify">Project Management Professional (PMP)® certification is the most distinguished professional qualification for project managers offered by Project Management Institute (PMI)®. The certification is relevant for professionals who are seeking to advance their career by completing the PMP® certification exam that is based on Project Management Institute, “A Guide to the Project Management Body of Knowledge”, (PMBOK® Guide)—Seventh Edition, PMI, Inc., 2017.</p>
+                                            <p class="text-justify">Our learning program equips you with the right information required to ace the PMP and Certified Associate of Project Management (CAPM) exams, and is based on the principles that are outlined in the PMBOK® Guide. Now you can enhance your competence and knowledge in Project management techniques, and establish your ability to handle complex project challenges with confidence.</p>
+                                            <p class="text-justify">PMP certification is globally recognized, and gives you the edge by showing your employers that you have the skills and training to get a project done from start to finish. If time and place constraints prevent you from attending a workshop course, then you could consider our Online Guided PMP Exam Prep course to prepare for the PMP or CAPM exams at your own convenience.</p>
+                                        </div>
+
+                                        <!-- All Instructors -->
+                                        <div class="all-instructors mb-30">
+                                            <h4>About the Trainer</h4>
+                                            <p class="text-justify"><b>Asjad A. Usmani</b> holds a Master’s Degree in Training & Development and pursuing Doctorate. He has completed his B. Tech major in Computer Science & Engineering & MBA in Training & Development. He is the trainer for PMP, ACP, ITIL, RMP, CSM, PRINCE2, Agile, Primavera, MS- Project, Six Sigma etc. He is a Certified PMP, PMI-RMP, PRINCE2 Practitioner, Agile, Certified Scrum Master, Six Sigma Green Belt, Black Belt and ITIL.
+
+He has trained Project Managers, Team leaders, Business Analysts, Agile Practitioner, QA across Singapore, Dubai, Bahrain, and India. His workshops are interactive, fun and free of boring PowerPoint.
+
+<br>He has extensive project management, Agile and LeSS transformation experience with large scale project and product development, coaching Sr. Leaders, and helping enterprise level. He worked as a software professional for several years involving the full software development life cycle with extensive experience of Project Management in prestigious IT companies in India and abroad while projects spanning across various technologies. He has been working as a freelance corporate trainer and Management consultant in project management more than a decade.
+
+<br>He conducts courses for PMP®, PRINCE2®, ITIL®, PMI-RMP®, Agile, Scrum, Six Sigma, Primavera, and Microsoft Project. He has designed and developed the course curriculum and courseware for various domestic and international clients. He brings to his training sessions, his international exposure and project management capabilities and vast IT experience, thereby making them meaningful, informative & extremely interesting.</p>
+                                            
+                                        </div>
+
+                                        <!-- FAQ -->
+                                        <div class="clever-faqs">
+                                            <h4>FAQs</h4>
+
+                                            <div class="accordions" id="accordion" role="tablist" aria-multiselectable="true">
+
+                                                <!-- Single Accordian Area -->
+                                                <div class="panel single-accordion">
+                                                    <h6><a role="button" class="" aria-expanded="true" aria-controls="collapseOne" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">What is the Criteria for PMP Application?
+                                                    <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                                    <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                    </a></h6>
+                                                    <div id="collapseOne" class="accordion-content collapse show">
+                                                        <p class="text-justify">With Secondary degree (high school diploma, associate’s degree or global equivalent), you require a minimum five 
+                                                        years/60 months unique non-overlapping professional project management experience during which at least 7,500 hours 
+                                                        were spent leading and directing the project* 35 contact hours of formal education With four-year degree (bachelor’s 
+                                                        degree or global equivalent), you require a minimum three years/36 months unique non-overlapping professional project
+                                                        management experience during which at least 4,500 hours were spent leading and directing the project* 35 contact hours
+                                                        of formal education.</p>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Single Accordian Area -->
+                                                <div class="panel single-accordion">
+                                                    <h6>
+                                                        <a role="button" class="collapsed" aria-expanded="true" aria-controls="collapseTwo" data-parent="#accordion" data-toggle="collapse" href="#collapseTwo">How long PMP Certification is Valid?
+                                                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                        </a>
+                                                    </h6>
+                                                    <div id="collapseTwo" class="accordion-content collapse">
+                                                     <p class="text-justify">As PMP certified professional, you need to renew the certification once in 3 years. The criteria 
+                                                     for renewal is collecting 60 PDUs (Professional Development Units) for 3-Year period. This PDUs can be acquired by delivering
+                                                     management training, attending PMI or Other recognized training as well attending PMP chapter conferences.</p>   
+                                                    </div>
+                                                </div>
+
+
+                                                <!-- Single Accordian Area -->
+                                                <div class="panel single-accordion">
+                                                    <h6>
+                                                        <a role="button" aria-expanded="true" aria-controls="collapseFour" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseFour">How many PMP Exam attempt can be given in period of one year?
+                                                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                        </a>
+                                                    </h6>
+                                                    <div id="collapseFour" class="accordion-content collapse">
+                                                        <p>In one year, a candidate can attempt maximum 3 times.</p>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- Single Accordian Area -->
+                                                <div class="panel single-accordion">
+                                                    <h6>
+                                                        <a role="button" aria-expanded="true" aria-controls="collapseFive" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseFive">Is PMI Membership mandatory to book PMP Exam?
+                                                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                        </a>
+                                                    </h6>
+                                                    <div id="collapseFive" class="accordion-content collapse">
+                                                        <p class="text-justify">PMI membership is not mandatory but this comes with no extra cost for first year. As PMI membership fee is US$139, and PMP exam fee for member US$405, non-member US$555. You effective save $150 taking PMI membership.</p>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- Single Accordian Area -->
+                                                <div class="panel single-accordion">
+                                                    <h6>
+                                                        <a role="button" aria-expanded="true" aria-controls="collapseThree" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseThree">Can I print hardcopy of PMBOK handbook for my reading convenience?
+                                                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                        </a>
+                                                    </h6>
+                                                    <div id="collapseThree" class="accordion-content collapse">
+                                                        <p class="text-justify">Yes. You may print your copy of PMBOK handbook but you are not allowed to distribute it as per PMI license agreement.</p>  
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- Single Accordian Area -->
+                                                <div class="panel single-accordion">
+                                                    <h6>
+                                                        <a role="button" aria-expanded="true" aria-controls="collapseSix" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseSix">Can I get full refund, if I decided not to continue with course?
+                                                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                        </a>
+                                                    </h6>
+                                                    <div id="collapseSix" class="accordion-content collapse">
+                                                        <p class="text-justify">You are entitled to full/partial refund as governed by EdHutrefund policies. Do read the policy details.</p>  
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- Single Accordian Area -->
+                                                <div class="panel single-accordion">
+                                                    <h6>
+                                                        <a role="button" aria-expanded="true" aria-controls="collapseSeven" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseSeven">Is there any documents I need to carry to the training session?
+                                                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                        </a>
+                                                    </h6>
+                                                    <div id="collapseSeven" class="accordion-content collapse">
+                                                        <p class="text-justify">Yes. You need to bring your Photo ID Proof such as National ID card, Driving License etc., we need this in order to issue Participation Certificate and booking certification exam as required.</p>  
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- Single Accordian Area -->
+                                                <div class="panel single-accordion">
+                                                    <h6>
+                                                        <a role="button" aria-expanded="true" aria-controls="collapseEight" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseEight">What does EdHut Study Kit include?
+                                                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                        </a>
+                                                    </h6>
+                                                    <div id="collapseEight" class="accordion-content collapse">
+                                                        <p class="text-justify">EdHut Study Kit include Course ware Hardcopy, Soft copies of study materials, Sample Questions, other required materials.</p>  
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- Single Accordian Area -->
+                                                <div class="panel single-accordion">
+                                                    <h6>
+                                                        <a role="button" aria-expanded="true" aria-controls="collapseNine" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseNine">Will I get a course completion certificate?
+                                                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                        </a>
+                                                    </h6>
+                                                    <div id="collapseNine" class="accordion-content collapse">
+                                                        <p class="text-justify">Yes, we offer course completion certificate after you successfully complete the training program.</p>  
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- Single Accordian Area -->
+                                                <div class="panel single-accordion">
+                                                    <h6>
+                                                        <a role="button" aria-expanded="true" aria-controls="collapseTen" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseTen">Do I get opportunity to contact trainer for any quick queries
+                                                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                        </a>
+                                                    </h6>
+                                                    <div id="collapseTen" class="accordion-content collapse">
+                                                        <p class="text-justify">We conduct whole day classroom revision session for this reason. In case, if you have quick queries, we fully support you to arrange a call from Trainer.</p>  
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- Single Accordian Area -->
+                                                <div class="panel single-accordion">
+                                                    <h6>
+                                                        <a role="button" aria-expanded="true" aria-controls="collapseEleven" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseEleven">What is the process to enroll for classroom training?
+                                                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                        </a>
+                                                    </h6>
+                                                    <div id="collapseEleven" class="accordion-content collapse">
+                                                        <p class="text-justify">It is easy to enroll for classroom training online. There are several options to pay either through your debit/credit card that includes Visa Card, MasterCard; American Express or - via PayPal. Payment receipt will be issued to the candidate automatically by email.</p>  
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- Single Accordian Area -->
+                                                <div class="panel single-accordion">
+                                                    <h6>
+                                                        <a role="button" aria-expanded="true" aria-controls="collapseTweleve" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseTweleve">Can I extend the access period?
+                                                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                        </a>
+                                                    </h6>
+                                                    <div id="collapseTweleve" class="accordion-content collapse">
+                                                        <p class="text-justify">Yes, you can extend the access period by paying an additional fee. Contact support@edhut.in for further information.</p>  
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- Single Accordian Area -->
+                                                <div class="panel single-accordion">
+                                                    <h6>
+                                                        <a role="button" aria-expanded="true" aria-controls="collapseThirteen" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseThirteen">Is there any provision for group discounts for classroom training programs?
+                                                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                        </a>
+                                                    </h6>
+                                                    <div id="collapseThirteen" class="accordion-content collapse">
+                                                        <p class="text-justify">Yes, we do offer group packages for the classroom training programs. Contact support@edhut.into know more about group concessions.</p>  
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Tab Text -->
+                                <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab--2">
+                                    <div class="clever-curriculum">
+
+                                        <!-- Curriculum Level -->
+                                        <div class="curriculum-level mb-30">
+                                             <h4>35-hour course</h4>
+                                            <h5>From the course</h5>
+                                            <ul class="curriculum-list">
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Learn to define and describe common terminology, manage projects faster while using fewer resources</li>
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Avoid common mistakes in managing projects and learn the many tricks of the trade</li>
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Apply International Project Management Standards from PMI® (the PMBOK® Guide) to real-world situations</li>
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Study PMBOK® Guides Five Process Groups, Ten Knowledge Areas, And The Area Of Professional and Social Responsibility</li>
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Gain skills needed to pass the PMI®s Project Management Professional (PMP) Certification Exam</li>
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Prepare for PMP /CAPM exams and master test-taking techniques</li>
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Learn PMBOK® Guide terms, definitions, and processes</li>
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Practice styles and types of questions modelled on PMP/CAPM exams</li>
+                                           
+                                            </ul>
+                                            <h5>From the course</h5>
+                                            <ul class="curriculum-list">
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> 35 PDUs Certificate</li>
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> 8 Full-Length Mock Exams featuring 1200 practice questions</li>
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Knowledge Area Questionnaire featuring 400 questions on the 10 Knowledge Areas</li>
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> PMP Exam Blue print (PMP Exam Application steps and procedure)</li>
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> PMP Math Formula with examples</li>
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> PMP Exam Tips and Techniques</li>
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Ready to use Free Project Management Templates</li>
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Downloadable Courseware e-book (please carry laptop/tablet to refer during class)</li>
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> PMP Exam Application assistance (Assistance with PMI® Registration, PMI® Membership, & PMI® Application procedure)</li>
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> End-to-end support via phone, mail, and chat</li>
+                                            </ul>
+                                            
+                                            <p><b>PMP, PMI, PMBOK is a registered mark of the Project Management Institute, Inc.</b></p>
+                                        </div>
+
+                               
+                                    </div>
+                                </div>
+
+                                <!-- Tab Text -->
+                                <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab--3">
+                                    <div class="clever-review">
+
+                                        <!-- About Review -->
+                                        <div class="about-review mb-30">
+                                            <h4>Agenda</h4>
+                                        </div>
+                                        <div class="clever-curriculum">
+
+                                        <!-- Curriculum Level -->
+                                        <div class="curriculum-level mb-30">
+                                        <div class="accordions" id="accordion" role="tablist" aria-multiselectable="true">
+
+                                                <!-- Single Accordian Area -->
+                                                <div class="panel single-accordion">
+                                                    <h6><a role="button" class="" aria-expanded="true" aria-controls="collapseOnes" data-toggle="collapse" data-parent="#accordion" href="#collapseOnes">Introduction to PMP Certification Course
+                                                    <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                                    <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                    </a></h6>
+                                                    <div id="collapseOnes" class="accordion-content collapse show">
+                                                      
+                                                      <ul class="curriculum-list">
+                                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> What are PMI® & PMBOK® Guide?</li>
+                                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Evolution of PMI®</li>
+                                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Certifications offered by PMI®</li>
+                                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> PMI® Contact Resources</li>
+                                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> What is PMP?</li>
+                                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Prerequisites for the PMP Exam</li>
+                                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> PMP Exam Syllabus</li>
+                                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> The Structure of the PMP Exam</li>
+                                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Introduction to Project Management</li>
+                                                      </ul>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Single Accordian Area -->
+                                                <div class="panel single-accordion">
+                                                    <h6>
+                                                        <a role="button" class="collapsed" aria-expanded="true" aria-controls="collapseTwos" data-parent="#accordion" data-toggle="collapse" href="#collapseTwos">Project Management Framework
+                                                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                        </a>
+                                                    </h6>
+                                                    <div id="collapseTwos" class="accordion-content collapse">
+                                                        <ul class="curriculum-list">
+                                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Definition of a Project               </li>
+                                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> What is Project Management?           </li>
+                                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> What is Operations Management?        </li>
+                                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> What is Program Management?           </li>
+                                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> What is Portfolio Management?         </li>
+                                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Project Management Office (PMO)       </li>
+                                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Managing Constraints                  </li>
+                                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Role of a Project Manager             </li>
+                                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Organizational Structure              </li>
+                                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Enterprise Environmental Factors      </li>
+                                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Organizational Process Assets         </li>
+                                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Project lifecycle Vs. Product Life cycle</li>
+                                                      </ul>
+                                                    </div>
+                                                </div>
+
+
+                                                <!-- Single Accordian Area -->
+                                                <div class="panel single-accordion">
+                                                    <h6>
+                                                        <a role="button" aria-expanded="true" aria-controls="collapseFours" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseFours">Project Management Processes
+                                                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                        </a>
+                                                    </h6>
+                                                    <div id="collapseFours" class="accordion-content collapse">
+                                                        <ul class="curriculum-list">
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Project Life Cycle Overview</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Project Lifecycle Vs. Project Management Process</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Stakeholders</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Key Stakeholders</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Process Groups, Knowledge Areas</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Input/ Output of 47 Project Management Process Groups</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Organizational influences on Project Management</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- Single Accordian Area -->
+                                                <div class="panel single-accordion">
+                                                    <h6>
+                                                        <a role="button" aria-expanded="true" aria-controls="collapseFives" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseFives">Project Integration Management
+                                                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                        </a>
+                                                    </h6>
+                                                    <div id="collapseFives" class="accordion-content collapse">
+                                                        <ul class="curriculum-list">
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> What is Project Integration Management</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Role of Project Team</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Role of Project Sponsor</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Project Selection Methods</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Core Processes of the Project Integration Management Knowledge Area</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- Single Accordian Area -->
+                                                <div class="panel single-accordion">
+                                                    <h6>
+                                                        <a role="button" aria-expanded="true" aria-controls="collapseThrees" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseThrees">Project Scope Management
+                                                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                        </a>
+                                                    </h6>
+                                                    <div id="collapseThrees" class="accordion-content collapse">
+                                                        <ul class="curriculum-list">
+                                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> What is Project Scope Management</li>
+                                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Product Scope vs. Project Scope</li>
+                                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Core Processes of the Project Scope Management Knowledge Area</li>
+                                                        </ul> 
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- Single Accordian Area -->
+                                                <div class="panel single-accordion">
+                                                    <h6>
+                                                        <a role="button" aria-expanded="true" aria-controls="collapseSixs" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseSixs">Project Time Management
+                                                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                        </a>
+                                                    </h6>
+                                                    <div id="collapseSixs" class="accordion-content collapse">
+                                                        <ul class="curriculum-list">
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> What is Project Time Management</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> What is Project Schedule</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Gantt Charts</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Network Diagram</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Estimation</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Schedule Network Analysis Techniques</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Schedule Network Analysis Techniques</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Core Processes of the Project Time Management Knowledge Area</li>
+                                                        </ul> 
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- Single Accordian Area -->
+                                                <div class="panel single-accordion">
+                                                    <h6>
+                                                        <a role="button" aria-expanded="true" aria-controls="collapseSevens" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseSevens">Project Cost Management
+                                                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                        </a>
+                                                    </h6>
+                                                    <div id="collapseSevens" class="accordion-content collapse">
+                                                        <ul class="curriculum-list">
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> What is Project Cost Management</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> WDifferentiate between Cost Estimating and Cost Budgeting</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Key Terminology in Project Cost Management</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Core Processes of Project Cost Management Knowledge Area</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Earned Value Technique</li>
+                                                        </ul> 
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- Single Accordian Area -->
+                                                <div class="panel single-accordion">
+                                                    <h6>
+                                                        <a role="button" aria-expanded="true" aria-controls="collapseEights" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseEights">Project Quality Management
+                                                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                        </a>
+                                                    </h6>
+                                                    <div id="collapseEights" class="accordion-content collapse">
+                                                       <ul class="curriculum-list">
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> What is Quality?</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> What is Quality Management?</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Cost of Quality</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Core PM processes of Project Quality Management Knowledge Area</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Seven Basic Tools of Quality</li>
+                                                       </ul>  
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- Single Accordian Area -->
+                                                <div class="panel single-accordion">
+                                                    <h6>
+                                                        <a role="button" aria-expanded="true" aria-controls="collapseNines" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseNines">Project Human Resource Management
+                                                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                        </a>
+                                                    </h6>
+                                                    <div id="collapseNines" class="accordion-content collapse">
+                                                        <ul class="curriculum-list">
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> What is Human Resource Management</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Roles and Responsibilities of the Project Sponsor</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Roles and Responsibilities of the Project Sponsor</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Core processes of Human Resource Management Knowledge Area</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Conflict Management</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Motivation Theory</li>
+                                                        </ul>  
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- Single Accordian Area -->
+                                                <div class="panel single-accordion">
+                                                    <h6>
+                                                        <a role="button" aria-expanded="true" aria-controls="collapseTens" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseTens">Project Communication Management
+                                                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                        </a>
+                                                    </h6>
+                                                    <div id="collapseTens" class="accordion-content collapse">
+                                                        <ul class="curriculum-list">
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> What is Communication?</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Communication Methods, Technology and Channels</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Basic Communication Model</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Key Terminology in Project Communication Management</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Core processes of Communication Management Knowledge Area</li>
+                                                        </ul> 
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- Single Accordian Area -->
+                                                <div class="panel single-accordion">
+                                                    <h6>
+                                                        <a role="button" aria-expanded="true" aria-controls="collapseElevens" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseElevens">Project Risk Management
+                                                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                        </a>
+                                                    </h6>
+                                                    <div id="collapseElevens" class="accordion-content collapse">
+                                                        <ul class="curriculum-list">
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> What is Risk?</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Project Management Risks</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> How are Risk & EMV calculated?</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Risk Classification</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Decision Tree Analysis</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Risk Reserve & Contingency Reserve</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Key Terminology in Project Risk Management</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Core processes of Risk Management Knowledge Area</li>
+                                                        </ul> 
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- Single Accordian Area -->
+                                                <div class="panel single-accordion">
+                                                    <h6>
+                                                        <a role="button" aria-expanded="true" aria-controls="collapseTweleves" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseTweleves">Project Procurement Management
+                                                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                        </a>
+                                                    </h6>
+                                                    <div id="collapseTweleves" class="accordion-content collapse">
+                                                        <ul class="curriculum-list">
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> What is a Contract?</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Different Types of Contract</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Advantages and Disadvantages of Contract Types</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Key Terminology in Project Procurement Management</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Core Processes of Project Procurement Management Knowledge Area</li>
+                                                        </ul>  
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- Single Accordian Area -->
+                                                <div class="panel single-accordion">
+                                                    <h6>
+                                                        <a role="button" aria-expanded="true" aria-controls="collapseThirteens" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseThirteens">Project Stakeholder Management
+                                                        <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                                        <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                        </a>
+                                                    </h6>
+                                                    <div id="collapseThirteens" class="accordion-content collapse">
+                                                        <ul class="curriculum-list">
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Who is a Stakeholder?</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Stakeholder Register</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Various Analytical Techniques for Stakeholder Analysis</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Various Management and Interpersonal Skills</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Key Terminology in Project Stakeholder Management</li>
+                                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Core processes of Project Stakeholder Management Knowledge Area</li>
+                                                        </ul>  
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            </div>
+                                    </div>
+                                </div>
+
+                                <!-- Tab Text -->
+                                <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab--4">
+                                    <div class="clever-description">
+                                        <!-- All Instructors -->
+                                        <div class="clever-curriculum">
+                                        <div class="curriculum-level mb-30">
+                                            <h4>Benefits</h4>
+                                            <h5>From the course</h5>
+                                            <ul class="curriculum-list">
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Learn to define and describe common terminology, manage projects faster while Plan, organize, acquire and manage resources to ensure successful completion of project objectives and goals.</li>
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Avoid common mistakes in managing projects and learn the many tricks of the trade</li>
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Apply International Project Management Standards from PMI® (the PMBOK® Guide) to real-world situations</li>
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Study PMBOK® Guides Five Process Groups, Ten Knowledge Areas, And The Area Of Professional and Social Responsibility</li>
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Gain skills needed to pass the PMI®s Project Management Professional (PMP) Certification Exam</li>
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Prepare for PMP/CAPM exams and master test-taking techniques</li>
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Learn PMBOK® Guide terms, definitions, and processes</li>
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Practice styles and types of questions modelled on PMP/CAPM exams (This course is aligned to the 2016 exam)</li>
+                                            </ul>
+                                            <h5>From the Workshop</h5>
+                                            <ul class="curriculum-list">
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> 90 Days Free online access to PMP e-learning</li>
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> 35 PDUs Certificate</li>
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> 15Hrs of High Quality full length Audio-Video based on PMBOK® Guide Fifth Edition</li>
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> 8 Full-Length Mock Exams featuring 1200 practice questions</li>
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Knowledge Area Questionnaire featuring 400 questions on the 10 Knowledge Areas</li>
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Exam Blue print (PMP Exam Application steps and procedure)</li>
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Formula with examples PMP</li>
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Exam Tips and Techniques PMP</li>
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Downloadable Courseware e-book (please carry laptop/tablet to refer during class)</li>
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> PMP Exam Application assistance (Assistance with PMI® Registration, PMI® Membership, & PMI® Application procedure)</li>
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> End-to-end support via phone, mail, and chat</li>
+                                            </ul>                                        
+                                        </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+
+                                <!-- Tab Text -->
+                                <div class="tab-pane fade" id="tab5" role="tabpanel" aria-labelledby="tab--5">
+                                    <div class="clever-members">
+
+                                        <!-- About Members -->
+                                        <div class="about-members mb-30">
+                                            <h4>PMP® Certification</h4>
+                                            
+                                            
+                                        </div>
+
+                                        <!-- All Members -->
+                                        <div class="all-instructors mb-30">
+                                            <h4>Eligibility:</h4>
+                                            <p class="text-justify">
+                                                 <b>To apply for the PMP Credential, you need to either:</b>
+                                                 Possess a Secondary Degree (High School Diploma, Associates Degree, or Global equivalent) with minimum of
+                                                 five (5) years / 60 months of unique (non-overlapping) Project Management experience, with 7,500 hours in
+                                                 leading and directing projects, and 35 hours of Project Management Education.<br>
+                                                 OR<br>
+                                                 Possess a four (4) year degree (Bachelor’s Degree or the Global equivalent) and a minimum 3 years of Project Management experience, 
+                                                 with 4,500 hours in leading and directing projects, and 35 hours of Project Management Education.
+                                            </p>
+                                         
+                                 
+                                            
+                                            <h4>Process</h4>
+                                            <ul class="curriculum-list">
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> To apply for the PMP Certification Exam:</li>
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Register and log in to www.pmi.org to get started.</li>
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> A printable PMP Application Form is also available.</li>
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> You can always refer the PMP Handbook for further information</li>  
+                                            </ul>
+                                            <p class="text-justify">To maintain PMP Certification, as part of PMI®s Continuing Certification Requirements program, a PMP credential holder will need to earn 60 PDUs per three-year cycle.
+
+Who Should Attend?</p>
+                                            <h4>Who Should Attend?</h4>
+                                            <p>This course will be useful for professionals in the following roles, among others:</p>
+                                            <ul class="curriculum-list">
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Managers or Engineers willing to further enhance their project management knowledge & skills, competitive edge and higher salary package.</li>
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Working professional – With 3+ years of experience, in any industry at various technical roles like Project management, operation, supply chain management etc.</li>
+                                                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Project Managers/Individuals seeking PMI certification.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--<div class="col-12 col-lg-4">
+                    <div class="course-sidebar">
+                        
+                        <a href="contact.php" class="btn clever-btn mb-30 w-100">Contact Us</a>
+
+                       
+                        <div class="sidebar-widget">
+                            <h4>Course Features</h4>
+                            <ul class="features-list">
+                                <li>
+                                    <h6><i class="fa fa-clock-o" aria-hidden="true"></i> Duration</h6>
+                                    <h6>35 Hr</h6>
+                                </li>
+                                <li>
+                                    <h6><i class="fa fa-bell" aria-hidden="true"></i> Lectures</h6>
+                                    <h6>4 Days</h6>
+                                </li>
+                                <li>
+                                    <h6><i class="fa fa-file" aria-hidden="true"></i> Quizzes</h6>
+                                    <h6>180 Questions</h6>
+                                </li>
+                                <li>
+                                    <h6><i class="fa fa-thumbs-up" aria-hidden="true"></i> Examination Mode</h6>
+                                    <h6>Online</h6>
+                                </li>
+                            </ul>
+                        </div>
+
+                        
+                        <div class="sidebar-widget">
+                            <h5>Participation Certificate</h5>
+                            <img src="img/bg-img/pmp_certfication-1-300x223.jpg" alt="">
+                        </div> 
+                       
+                        <div class="sidebar-widget">
+                            <h4>Other Courses</h4>
+
+                            
+                            <div class="single--courses d-flex align-items-center">
+                                <div class="thumb">
+                                    <img src="img/blog-img/CSM.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h5>Certified Scrum Master®️ (CSM)</h5>
+                                </div>
+                            </div>
+
+                            
+                            <div class="single--courses d-flex align-items-center">
+                                <div class="thumb">
+                                    <img src="img/blog-img/ACP.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h5>PMI-ACP®️ CERTIFICATION</h5>
+                                </div>
+                            </div>
+                            
+                            
+                          
+                            <div class="single--courses d-flex align-items-center">
+                                <div class="thumb">
+                                    <img src="img/blog-img/RMP.png" alt="">
+                                </div>
+                                <div class="content">
+                                       <h5>PMI-RMP®️ CERTIFICATION</h5>
+                                </div>
+                            </div>
+                         
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <!-- ##### Courses Content End ##### -->
+
+    <!-- ##### Footer Area Start ##### -->
+  <?php include 'include/footer.php'; ?>
+    <!-- ##### Footer Area End ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+
+</body>
+</html>

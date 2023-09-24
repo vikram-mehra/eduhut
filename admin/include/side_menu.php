@@ -57,17 +57,25 @@
 				</li>
 				<li><a href="javascript:void(0);" class="waves-effect"><i class="ti-package"></i> <span>Study Material<span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
 					<ul class="submenu">
-						<li><a href="#">Create</a>
+					<li><a href="study-material-create.php">Create</a>
 						</li>
-						<li><a href="#">View</a>
-						</li>
+					<li><a href="study-material-list.php">View</a>
+					</li>
 					</ul>
 				</li>
 				<li><a href="javascript:void(0);" class="waves-effect"><i class="ti-package"></i> <span>Video Material<span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
 					<ul class="submenu">
-						<li><a href="#">Create</a>
+						<li><a href="video-create.php">Create</a>
 						</li>
-						<li><a href="#">View</a>
+						<li><a href="video-list.php">View</a>
+						</li>
+					</ul>
+				</li>
+				<li><a href="javascript:void(0);" class="waves-effect"><i class="ti-package"></i> <span>Courses<span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
+					<ul class="submenu">
+						<li><a href="course-create.php">Create</a>
+						</li>
+						<li><a href="course-list.php">View</a>
 						</li>
 					</ul>
 				</li>

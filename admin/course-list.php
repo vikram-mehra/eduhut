@@ -78,6 +78,8 @@ if (isset($_GET['id'])) {
 											<tr>
 												<th>SN</th>
 												<th>Course Name</th>
+												<th>Course Title</th>
+												<th>Course Overview</th>
 												<th>Status</th>
 												<th>Created</th>
 												<th>Action</th>
@@ -94,6 +96,8 @@ if (isset($_GET['id'])) {
 													<tr class="show">
 														<td> <?php echo $i; ?></td>
 														<td><?php echo $row['name'];   ?></td>
+														<td><?php echo $row['title'];   ?></td>
+														<td><?php echo $row['overview'];   ?></td>
 														<td><?php echo ($row['status']==1)?'Enabled':'Disabled';   ?></td>
 														<td><?php echo date('d-m-Y', strtotime($row['created'])); ?></td>
 														<td>

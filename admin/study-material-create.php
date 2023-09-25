@@ -95,6 +95,11 @@ if (isset($_GET['id'])) {
 																															} ?> </textarea>
 												</div>
 
+												<div class="form-group col-12">
+													<label for="name">File</label>
+													<input type="file" name="image" accept="application/pdf" />
+													
+												</div>
 												
 												<div class="col-lg-2 align-self-center">
 													<?php

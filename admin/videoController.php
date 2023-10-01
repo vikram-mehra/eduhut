@@ -23,10 +23,11 @@
 		$title             =$_POST['title'];
 		$description       =$_POST['description'];
 		$category_id       =$_POST['category_id'];
+		$status       	   =$_POST['status'];
 		$create_at		   =date("Y-m-d h:i:s");
 	
-		$blogCategory = "INSERT INTO `tbl_videos`(`course`,`video_url`,`description`,`thumbnail_img`,`created_at`,`deleted_at`) 
-		VALUES ('$category_id','$title','$description','$create_at','$create_at')";
+		$blogCategory = "INSERT INTO `tbl_videos`(`course`,`video_url`,`description`,`thumbnail_img`,`status`,`created_at`,`deleted_at`) 
+		VALUES ('$category_id','$title','$description','','$status','$create_at','$create_at')";
 		mysqli_query($con, $blogCategory);
 						
 		header('Location:video-list.php?success');
@@ -52,9 +53,9 @@
 		$title             =$_POST['title'];
 		$description       =$_POST['description'];
 		$category_id       =$_POST['category_id'];
+		$status       	   =$_POST['status'];
 		$id                =$_POST['id'];
-
-		$student = "UPDATE `tbl_videos` SET `description`='$description',`course`='$category_id' ,`video_url`='$title' WHERE id=$id "; 
+		$student = "UPDATE `tbl_videos` SET `description`='$description',`course`='$category_id' ,`video_url`='$title',`status`='$status' WHERE id=$id "; 
 		mysqli_query($con, $student);
 		header('Location:video-list.php?success');
 	}

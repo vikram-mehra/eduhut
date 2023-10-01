@@ -103,7 +103,15 @@ if (isset($_GET['id'])) {
 																													echo $heading['video_url'];
 																												} ?>" required />
 												</div>
+											    <div class="form-group col-12">
+													<label for="name">Status</label>
 
+													<select name="status" class="form-control" required>
+														<option <?php echo ($heading['status'] == 1) ? 'selected' : ''; ?> value="1">Enable</option>
+														<option <?php echo (isset($_GET['id']) && ($heading['status'] == 0)) ? 'selected' : ''; ?> value="0">Disable</option>
+													</select>
+
+												</div>
 												<div class="form-group col-12">
 													<label for="name">Description</label>
 													<textarea id="editor" class="form-control" name="description" required> <?php if (isset($_GET['id'])) {

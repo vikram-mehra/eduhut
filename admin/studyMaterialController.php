@@ -26,6 +26,8 @@
 	{
 		$description       =$_POST['description'];
 		$category_id       =$_POST['category_id'];
+		$title       	   =$_POST['title'];
+		$status       	   =$_POST['status'];
 		$create_at		   =date("Y-m-d h:i:s");
 		$image             =$_FILES["image"]["name"];
 
@@ -42,8 +44,8 @@
 
 		
 		// end upload file
-		$insData = "INSERT INTO `tbl_study_material` (`type`,`file`,`description`,`created_at`,`deleted_at`)
-		VALUES ('$category_id','$fileName','$description','$create_at','$create_at')";
+		$insData = "INSERT INTO `tbl_study_material` (`type`,`file`,`title`,`status`,`description`,`created_at`,`deleted_at`)
+		VALUES ('$category_id','$fileName','$title','$status','$description','$create_at','$create_at')";
 		mysqli_query($con, $insData);
 						
 		header('Location:study-material-list.php?success');
@@ -68,9 +70,11 @@
 	{
 		$description       =$_POST['description'];
 		$category_id       =$_POST['category_id'];
-		$id              =$_POST['id'];
+		$id                =$_POST['id'];
+		$title       	   =$_POST['title'];
+		$status       	   =$_POST['status'];
 		$image             =$_FILES["image"]["name"];
-		if($image !='') {	
+		if($image !='') {
 			// upload file
 			$target_dir = "uploads/";
 			$target_file = $target_dir . basename($_FILES["image"]["name"]);
@@ -83,11 +87,11 @@
 			}
 
 			// end upload file
-			$student = "UPDATE `tbl_study_material` SET `description`='$description',`type`='$category_id',`file`='$fileName' WHERE id=$id "; 
+			$student = "UPDATE `tbl_study_material` SET `description`='$description',`type`='$category_id',`file`='$fileName',`title`='$title',`status`='$status' WHERE id=$id "; 
 			mysqli_query($con, $student);
 		}
 		else{
-			$student = "UPDATE `tbl_study_material` SET `description`='$description',`type`='$category_id' WHERE id=$id "; 
+			$student = "UPDATE `tbl_study_material` SET `description`='$description',`type`='$category_id',`title`='$title',`status`='$status' WHERE id=$id "; 
 			mysqli_query($con, $student);
 			
 		}

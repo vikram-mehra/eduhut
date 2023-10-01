@@ -86,7 +86,21 @@ if (isset($_GET['id'])) {
 													</select>
 
 												</div>
+												<div class="form-group col-12">
+													<label for="name">Course Title</label>
+													<input type="text" class="form-control" name="title" value="<?php if (isset($_GET['id'])) {
+																													echo $heading['title'];
+																												} ?>"  />
+												</div>
+												<div class="form-group col-12">
+													<label for="name">Status</label>
 
+													<select name="status" class="form-control" required>
+														<option <?php echo ($heading['status'] == 1) ? 'selected' : ''; ?> value="1">Enable</option>
+														<option <?php echo (isset($_GET['id']) && ($heading['status'] == 0)) ? 'selected' : ''; ?> value="0">Disable</option>
+													</select>
+
+												</div>
 												
 												<div class="form-group col-12">
 													<label for="name">Description</label>

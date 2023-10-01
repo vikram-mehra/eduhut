@@ -72,6 +72,7 @@ if (!(isset($_SESSION['user_spritEducation']) && $_SESSION['user_spritEducation'
 											<tr>
 												<th>SN</th>
 												<th>Course</th>
+												<th>File</th>
 												<th>Description</th>
 												<th>Date</th>
 												<th>Action</th>
@@ -86,10 +87,13 @@ if (!(isset($_SESSION['user_spritEducation']) && $_SESSION['user_spritEducation'
 											if ($result = mysqli_query($con, $sql)) {
 												while ($row = mysqli_fetch_array($result)) {
 													$i++;
+													$file = $row['file'];
+													$view = '<a href="'.$file. '" target="_blank"> view </a>';
 											?>
 													<tr class="show">
 														<td> <?php echo $i; ?></td>
 														<td><?php echo $row['name'];   ?></td>
+														<td><?php echo (!empty($row['file']))?$view:'';   ?></td>
 														<td><?php echo substr($row['description'], 0, 120);  ?></td>
 														<td><?php echo date('d-m-Y', strtotime($row['created_at'])); ?></td>
 														<td>

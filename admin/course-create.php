@@ -82,9 +82,21 @@ if (isset($_GET['id'])) {
 
 												<div class="form-group col-12">
 													<label for="name">Course Name</label>
-													<input type="text" class="form-control" name="title" value="<?php if (isset($_GET['id'])) {
+													<input type="text" class="form-control" name="name" value="<?php if (isset($_GET['id'])) {
 																													echo $heading['name'];
 																												} ?>" required />
+												</div>
+												<div class="form-group col-12">
+													<label for="name">Course Title</label>
+													<input type="text" class="form-control" name="title" value="<?php if (isset($_GET['id'])) {
+																													echo $heading['title'];
+																												} ?>"  />
+												</div>
+												<div class="form-group col-12">
+													<label for="name">Overview</label>
+													<textarea id="editor" class="form-control" name="overview" required> <?php if (isset($_GET['id'])) {
+																																echo $heading['overview'];
+																															} ?> </textarea>
 												</div>
 												<div class="form-group col-12">
 													<label for="name">Status</label>

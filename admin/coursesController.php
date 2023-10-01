@@ -21,13 +21,15 @@
 	
 	function addCourse($con)
 	{
-		$name             =$_POST['title'];
+		$name             =$_POST['name'];
+		$title            =$_POST['title'];
+		$overview         =$_POST['overview'];
 		$status           =$_POST['status'];
 		$create_at        =date("Y-m-d h:i:s");
 	
 		
-		$insData = "INSERT INTO `courses`(`name`,`status`,`created`) 
-		VALUES ('$name','$status','$create_at')";
+		$insData = "INSERT INTO `courses`(`name`,`title`,`overview`,`status`,`created`) 
+		VALUES ('$name','$title','$overview','$status','$create_at')";
 		mysqli_query($con, $insData);
 						
 		header('Location:course-list.php?success');
@@ -51,11 +53,13 @@
 
 	function updateCourse($con)
 	{
-		$name             =$_POST['title'];
+		$name             =$_POST['name'];
+		$title            =$_POST['title'];
+		$overview         =$_POST['overview'];
 		$status           =$_POST['status'];
 		$id               =$_POST['id'];
 		
-		$student = "UPDATE `courses` SET `name`='$name',`status`='$status' WHERE id=$id "; 
+		$student = "UPDATE `courses` SET `name`='$name',`title`='$title',`overview`='$overview',`status`='$status' WHERE id=$id "; 
 		mysqli_query($con, $student);
 		header('Location:course-list.php?success');
 	}

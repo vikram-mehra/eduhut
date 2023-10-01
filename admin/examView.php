@@ -80,15 +80,18 @@ if(isset($_GET['id']))
 												<th>Exam Name</th>
                         						<th>Exam Duration(In Minute)</th>
                         						<th>No Of Question</th>
-                        						<th>Exam Type</th>
+                        						<th>Course</th>
                         						<th>Exam Status</th>
                         						<th>Action</th>
 												
 											</tr>
 										</thead>
 										<tbody>
-										    <?php					
-											$sql="select * from tbl_exam_master ORDER BY id DESC";
+										    <?php
+											$sql = "select exam.*,cat.name from tbl_exam_master as exam LEFT JOIN courses as cat
+											ON exam.examType=cat.id
+											ORDER BY exam.id DESC";
+
 											if ($result=mysqli_query($con, $sql)) {
 											while($row=mysqli_fetch_array($result))
 											{
@@ -98,7 +101,7 @@ if(isset($_GET['id']))
                         						<td><?php echo $row['examName'];   ?></td>
                         						<td><?php echo ($row['examDuration']/60);  ?></td>
                         						<td><?php echo $row['examnoofQuestion']; ?></td>
-                        						<td><?php echo $row['examType'];   ?></td>
+                        						<td><?php echo $row['name'];   ?></td>
                         						<td><?php echo $row['examStatus'];?></td>
                         						<td>
                         						<a href="examCreate.php?id=<?php echo $row['id'];?>"  class="btn btn-outline-success btn-sm"><i class="fas fa-user-edit"></i></a>
@@ -113,7 +116,7 @@ if(isset($_GET['id']))
 											?>
 											<p>no data found</p>
 											<?php
-											}					
+											}
 											?>
 											
 										</tbody>

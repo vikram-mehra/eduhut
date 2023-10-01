@@ -90,13 +90,20 @@ if(isset($_GET['id']))
 													<label for="name">No Of Question</label>
 													<input type="text" class="form-control" name="examnoofQuestion" value="<?php if(isset($_GET['id'])){echo $heading['examnoofQuestion'];} ?>"  maxlength="10" required />
 												</div>
-												<div class="form-group col-lg-4">
-													<label for="name">Exam Type</label>
-													<select class="form-control"  name="examType" style="color:#a1b1be;" required>
-                									    <option>Select  Type</option>
-                										<option value="PDUs" <?php if(isset($_GET['id']) && $heading['examType'] == 'PDUs'){ echo 'selected';} ?>>PDUs</option>
-                										<option value="Simulator" <?php if(isset($_GET['id']) && $heading['examType'] == 'Simulator'){ echo 'selected';} ?>>Simulator</option>
-                									</select>
+												<div class="form-group col-12">
+													<label for="name">Course</label>
+
+													<select name="examType" class="form-control" required>
+														<option value="">Select</option>
+														<?php
+														$sql = "select * from courses where status=1";
+														if ($result = mysqli_query($con, $sql)) {
+															while ($row = mysqli_fetch_array($result)) {
+														?>
+																<option <?php echo ($heading['examType'] == $row['id']) ? 'selected' : ''; ?> value="<?php echo $row['id']; ?>"><?php echo $row['name']; ?></option>
+														<?php }
+														} ?>
+													</select>
 												</div>
 												<div class="form-group col-lg-4">
 													<label for="name">Exam Status</label>

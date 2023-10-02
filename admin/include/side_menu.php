@@ -79,6 +79,14 @@
 						</li>
 					</ul>
 				</li>
+				<li><a href="javascript:void(0);" class="waves-effect"><i class="ti-package"></i> <span>User Courses<span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span></span></a>
+					<ul class="submenu">
+						<li><a href="usercourse-create.php">Create</a>
+						</li>
+						<li><a href="usercourse-list.php">View</a>
+						</li>
+					</ul>
+				</li>
 			</ul>
 		</div>
 		<!-- Sidebar -->

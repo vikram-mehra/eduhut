@@ -52,7 +52,7 @@ if (isset($_GET['id'])) {
 					<div class="page-title-box">
 						<div class="row align-items-center">
 							<div class="col-sm-6">
-								<h4 class="page-title"><?php echo (isset($_GET['id']))?'Update Video':'Add Video' ?></h4>
+								<h4 class="page-title"><?php echo (isset($_GET['id']))?'Update User Course':'Add User Course' ?></h4>
 							</div>
 						</div>
 					</div>

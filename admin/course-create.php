@@ -108,7 +108,11 @@ if (isset($_GET['id'])) {
 
 												</div>
 
-
+												<div class="form-group col-12">
+													<label for="name">File</label>
+													<input type="file" name="image" accept="image/*" />
+													
+												</div>
 
 
 												<div class="col-lg-2 align-self-center">

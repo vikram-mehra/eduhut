@@ -1,7 +1,7 @@
-<?php include 'include/header2.php'; 
+<?php include 'include/header2.php';
 
 
-if (!$_SESSION['userid']) { 
+if (!$_SESSION['userid']) {
    
    header("Location:login.php");
 }
@@ -34,7 +34,27 @@ if (!$_SESSION['userid']) {
     <!-- ##### Header Area Start ##### -->
       <?php include 'include/header.php'; ?>
     <!-- ##### Header Area End ##### -->
+	<?php
+		$courseId = $_GET['cid'];
+		$showOverviewtab = true;
+		# overview section
+		$sql="SELECT * from courses where id= $courseId and status=1";
+		$res=mysqli_query($con,$sql);
+		$overviewData   = mysqli_fetch_row($res);
 
+		# study materials
+		$sql1="SELECT * from tbl_study_material where type = $courseId and status=1 ";
+		$studyM=mysqli_query($con,$sql1);
+
+		# video materials
+		$sql2="SELECT * from tbl_videos where course = $courseId and status=1";
+		$videosM=mysqli_query($con,$sql2);
+
+		# exam tab
+		$sql3="SELECT * from tbl_exam_master where examType=$courseId and examStatus='Yes'";
+		$exam=mysqli_query($con,$sql3);
+
+	?>
     <!-- ##### Regular Page Area Start ##### -->
     <div class="regular-page-area section-padding-100">
         <div class="container">
@@ -44,22 +64,60 @@ if (!$_SESSION['userid']) {
 
                         <div class="clever-tabs-content">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" id="tab--1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="false">Study Material</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="tab--2" data-toggle="tab" href="<?php $sql="SELECT count(*) as counts from tbl_user_pdfstatus where userid=$userid";
-														$runs=mysqli_query($con,$sql); $row=mysqli_fetch_assoc($runs);
-	$count=$row['counts']; if($count > 0){echo '#tab2';} else {echo '#';}?>" role="tab" aria-controls="tab2" aria-selected="true">Videos</a>
-                                </li>
-								<li class="nav-item">
-                                    <a class="nav-link" id="tab--3" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="true">Assessment</a>
-                                </li>
+								<?php if(!empty($overviewData[2])) {
+									$showsmtab = false;
+								?>
+									<li class="nav-item">
+										<a class="nav-link active" id="tab--0" data-toggle="tab" href="#tab0" role="tab" aria-controls="tab0" aria-selected="false">Overview</a>
+									</li>
+								<?php } else {
+									$showOverviewtab = false;
+									$showsmtab = true;
+								} ?>
+								<?php if($studyM->num_rows>0) { ?>
+									<li class="nav-item">
+										<a class="nav-link <?php echo ($showsmtab)?'active':'' ?>" id="tab--1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="false">Study Material</a>
+									</li>
+								<?php } else {
+									$showsmtab = false;
+								} ?>
+								<?php if($videosM->num_rows>0) { ?>
+									<li class="nav-item">
+										<a class="nav-link" id="tab--2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="true">Videos</a>
+									</li>
+								<?php } ?>
+								<?php if($exam->num_rows>0) { ?>
+									<li class="nav-item">
+										<a class="nav-link" id="tab--3" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="true">Assessment</a>
+									</li>
+								<?php } ?>
                             </ul>
 
                             <div class="tab-content" id="myTabContent">
-                                <!-- Tab Text -->
-                                <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab--1">
+								  <!-- Tab Text overview -->
+								  <div class="tab-pane fade <?php echo ($showOverviewtab)?'show active':'' ?>" id="tab0" role="tabpanel" aria-labelledby="tab--0">
+                                    <div class="clever-description">
+
+                                        <!-- About Course -->
+                                        <div class="about-course mb-30">
+										     
+                                            <table id="datatable" class="table table-striped table-bordered" cellspacing="0" width="100%">
+
+												<thead>
+													 <p> <?php echo $overviewData[2]; ?> </p>
+												</thead>
+												<tbody>
+													<?php echo $overviewData[3]; ?>
+												</tbody>
+										    </table>
+                                        </div>
+
+                                        
+
+                                    </div>
+                                </div>
+                                <!-- Tab Text study metarial-->
+                                <div class="tab-pane fade <?php echo ($showsmtab)?'show active':'' ?>" id="tab1" role="tabpanel" aria-labelledby="tab--1">
                                     <div class="clever-description">
 
                                         <!-- About Course -->
@@ -69,44 +127,37 @@ if (!$_SESSION['userid']) {
                                             <table id="datatable" class="table table-striped table-bordered" cellspacing="0" width="100%">
 												<thead>
 													  <tr>
+														<th>#</th>
+														<th>Title</th>
 														<th>Description</th>
-														<th>Type</th>
 														<th>Action</th>
 													  </tr>
 												</thead>
 												<tbody>
                                                       												  
-												      <?php
-												        $count="select count(*) as pds from tbl_user_pdfstatus where userid=$userid";
-												        $counts=mysqli_query($con,$count);
-												        $counts_result=mysqli_fetch_assoc($counts);
-												        $pdcounts=$counts_result['pds'];
-													    $sql="SELECT * from tbl_study_material order by id asc";
-														$run=mysqli_query($con,$sql);
-														while($row=mysqli_fetch_array($run))
-														{
-													  ?>
-														  <tr>
-															<td><?php echo $row['description'];   ?></td>
-															<td><?php echo $row['type'];   ?></td>
-															<?php 
-															if($pdcounts >= 20)
+												    <?php
+												       
+														$i=0;
+														if($studyM->num_rows>0) {
+															while($row=mysqli_fetch_array($studyM))
 															{
-															?>
-															<td><a href="admin/uploads/<?php echo $row['file'];   ?>" class="btn btn-warning"  onclick="return false;" >Download</a></td>
-															<?php
-														    }
-														    else
-														    {
-														    ?>
-														    <td><a href="admin/uploads/<?php echo $row['file'];   ?>" class="btn btn-warning jj" data-file="<?php echo $row['id']; ?>"  download>Download</a></td>
-														    <?php
-														    }
-														    ?>
-														  </tr>
-													  <?php
+																$i++;
+																$file = $row['file'];
+																$view = '<a href="admin/'.$file. '" target="_blank"> view </a>';
+													?>
+														  <tr>
+															<td><?php echo $i;   ?></td>
+															<td><?php echo $row['title'];   ?></td>
+															<td><?php echo $row['description'];   ?></td>
+															<td><?php echo (!empty($row['file']))?$view:'';   ?></td>
+													<?php
+															}
+														} else {
+															echo "<p> No Records Found</p>";
 														}
-														?>
+													?>
+														  </tr>
+													  
 												</tbody>
 										    </table>
                                         </div>
@@ -115,8 +166,9 @@ if (!$_SESSION['userid']) {
 
                                     </div>
                                 </div>
-
-                                <!-- Tab Text -->
+								
+								
+                                <!-- Tab Text  video-->
                                 <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab--2">
                                     <div class="clever-curriculum">
                                     
@@ -127,22 +179,19 @@ if (!$_SESSION['userid']) {
 													  <tr>
 													    <th>#</th>
 														<th>Description</th>
-														<th>Type</th>
 														<th>Action</th>
 													  </tr>
 												</thead>
 												<tbody>
 												      <?php
-													    $sql="SELECT * from tbl_videos";
-														$run=mysqli_query($con,$sql);
-														while($row=mysqli_fetch_array($run))
+													    
+														while($row=mysqli_fetch_array($videosM))
 														{
 													  ?>
 														  <tr>
 														    <td><img src="img/<?php echo $row['thumbnail_img'];   ?>" class="thumbnail" style="width:60px;height:60px;"></td>
-															<td><?php echo $row['description'];   ?></td>
-															<td><?php echo $row['type'];   ?></td>
-															<td><a href="videos-view.php?video=<?php echo $row['id'];   ?>" class="btn btn-warning" target="_blank">View</a></td>
+															<td><?php echo substr($row['description'], 0, 120);   ?></td>
+															<td><a href="<?php echo $row['video_url'];   ?>" class="btn btn-warning" target="_blank">View</a></td>
 														  </tr>
 													  <?php
 														}
@@ -171,9 +220,8 @@ if (!$_SESSION['userid']) {
 												</thead>
 												<tbody>
 												       <?php
-													    $sql="SELECT * from tbl_exam_master where examType='PDUs'";
-														$run=mysqli_query($con,$sql);
-														while($row=mysqli_fetch_array($run))
+													    
+														while($row=mysqli_fetch_array($exam))
 														{
 													  ?>
 												      <tr>
@@ -259,7 +307,14 @@ $.ajax({
   gtag('config', 'UA-23581568-13');
 
 </script>
+
 <script>
+	$(document).ready(function () {
+    $('.nav-link').on('click', function (e) {
+        e.preventDefault(); // Prevent the default behavior of the link
+        $(this).tab('show'); // Show the clicked tab
+    });
+});
   $(document).ready(function() {
     $('#datatable').dataTable();
  } );
@@ -270,6 +325,7 @@ $.ajax({
     $('#datatabless').dataTable();
  } );
 </script>
+
 
 </body>
 

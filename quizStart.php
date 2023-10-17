@@ -142,7 +142,7 @@
 	{
 	?>
 	
-	    {mcqno:"<?php echo $row['mcq_sno']; ?>",questionno:"<?php echo $row['id']; ?>",question:"<?php echo  'Q:-'.$i++.' '.$row['question_name']; ?>",choices: ["<?php echo str_replace('"', '', $row['option1']) ; ?>", "<?php echo  str_replace('"', '', $row['option2']); ?>", "<?php echo  str_replace('"', '', $row['option3']); ?>", "<?php echo  str_replace('"', '', $row['option4']); ?>"],correctAnswer:"<?php  if($row['correct_ans'] == 'A'){echo '0';}elseif($row['correct_ans'] == 'B'){echo '1';}elseif($row['correct_ans'] == 'C'){echo '2';}elseif($row['correct_ans'] == 'D'){echo '3';} ?>"},
+	    {mcqno:"<?php echo $i; ?>",questionno:"<?php echo $row['id']; ?>",question:"<?php echo  'Q:-'.$i++.' '. str_replace('"', '', $row['question_name']); ?>",choices: ["<?php echo str_replace('"', '', $row['option1']) ; ?>", "<?php echo  str_replace('"', '', $row['option2']); ?>", "<?php echo  str_replace('"', '', $row['option3']); ?>", "<?php echo  str_replace('"', '', $row['option4']); ?>"],correctAnswer:"<?php  if($row['correct_ans'] == 'A'){echo '0';}elseif($row['correct_ans'] == 'B'){echo '1';}elseif($row['correct_ans'] == 'C'){echo '2';}elseif($row['correct_ans'] == 'D'){echo '3';} ?>"},
 	<?php
 	}
     ?>

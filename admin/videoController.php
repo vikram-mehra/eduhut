@@ -24,10 +24,24 @@
 		$description       =$_POST['description'];
 		$category_id       =$_POST['category_id'];
 		$status       	   =$_POST['status'];
+		$image             =$_FILES["image"]["name"];
 		$create_at		   =date("Y-m-d h:i:s");
-	
+		
+		// upload file
+		$target_dir = "uploads/";
+		$target_file = $target_dir . basename($_FILES["image"]["name"]);
+		$fileName = '';
+		if (move_uploaded_file($_FILES["image"]["tmp_name"], $target_file)) {
+			echo "The file ". basename( $_FILES["image"]["name"]). " has been uploaded.";
+			$fileName = $target_dir.$image ;
+		} else {
+			echo "Sorry, there was an error uploading your file.";
+		}
+
+		
+		// end upload file
 		$blogCategory = "INSERT INTO `tbl_videos`(`course`,`video_url`,`description`,`thumbnail_img`,`status`,`created_at`,`deleted_at`) 
-		VALUES ('$category_id','$title','$description','','$status','$create_at','$create_at')";
+		VALUES ('$category_id','$title','$description','$fileName','$status','$create_at','$create_at')";
 		mysqli_query($con, $blogCategory);
 						
 		header('Location:video-list.php?success');
@@ -55,7 +69,28 @@
 		$category_id       =$_POST['category_id'];
 		$status       	   =$_POST['status'];
 		$id                =$_POST['id'];
-		$student = "UPDATE `tbl_videos` SET `description`='$description',`course`='$category_id' ,`video_url`='$title',`status`='$status' WHERE id=$id "; 
-		mysqli_query($con, $student);
+		$image             =$_FILES["image"]["name"];
+
+		if($image !='') {
+			// upload file
+			$target_dir = "uploads/";
+			$target_file = $target_dir . basename($_FILES["image"]["name"]);
+			$fileName = '';
+			if (move_uploaded_file($_FILES["image"]["tmp_name"], $target_file)) {
+				echo "The file ". basename( $_FILES["image"]["name"]). " has been uploaded.";
+				$fileName = $target_dir.$image ;
+			} else {
+				echo "Sorry, there was an error uploading your file.";
+			}
+
+			// end upload file
+			$student = "UPDATE `tbl_videos` SET `description`='$description',`course`='$category_id' ,`video_url`='$title',`thumbnail_img`='$fileName',`status`='$status' WHERE id=$id "; 
+			mysqli_query($con, $student);
+		
+		} else {
+			$student = "UPDATE `tbl_videos` SET `description`='$description',`course`='$category_id' ,`video_url`='$title',`status`='$status' WHERE id=$id "; 
+			mysqli_query($con, $student);
+		}
+		
 		header('Location:video-list.php?success');
 	}

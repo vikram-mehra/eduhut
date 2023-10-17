@@ -109,7 +109,7 @@ if (isset($_GET['id'])) {
 												</div>
 
 												<div class="form-group col-12">
-													<label for="name">File</label>
+													<label for="name">Course Image</label>
 													<input type="file" name="image" accept="image/*" />
 													
 												</div>

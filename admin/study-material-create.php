@@ -87,7 +87,7 @@ if (isset($_GET['id'])) {
 
 												</div>
 												<div class="form-group col-12">
-													<label for="name">Course Title</label>
+													<label for="name">Title</label>
 													<input type="text" class="form-control" name="title" value="<?php if (isset($_GET['id'])) {
 																													echo $heading['title'];
 																												} ?>"  />

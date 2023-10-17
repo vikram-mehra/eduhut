@@ -118,7 +118,11 @@ if (isset($_GET['id'])) {
 																																echo $heading['description'];
 																															} ?> </textarea>
 												</div>
-
+												<div class="form-group col-12">
+													<label for="name">Video Thumbnail</label>
+													<input type="file" name="image" accept="image/*" />
+													
+												</div>
 												
 												<div class="col-lg-2 align-self-center">
 													<?php

@@ -189,7 +189,7 @@ if (!$_SESSION['userid']) {
 														{
 													  ?>
 														  <tr>
-														    <td><img src="img/<?php echo $row['thumbnail_img'];   ?>" class="thumbnail" style="width:60px;height:60px;"></td>
+														    <td><img src="admin/<?php echo $row['thumbnail_img'];   ?>" class="thumbnail" style="width:60px;height:60px;"></td>
 															<td><?php echo substr($row['description'], 0, 120);   ?></td>
 															<td><a href="<?php echo $row['video_url'];   ?>" class="btn btn-warning" target="_blank">View</a></td>
 														  </tr>

@@ -74,7 +74,7 @@ if (!(isset($_SESSION['user_spritEducation']) && $_SESSION['user_spritEducation'
 												<th>Video URL</th>
 												<th>Course</th>
 												<th>Description</th>
-												<!-- <th>Image</th> -->
+												<th>Thumbnail</th>
 												<th>Date</th>
 												<th>Action</th>
 											</tr>
@@ -88,13 +88,14 @@ if (!(isset($_SESSION['user_spritEducation']) && $_SESSION['user_spritEducation'
 											if ($result = mysqli_query($con, $sql)) {
 												while ($row = mysqli_fetch_array($result)) {
 													$i++;
+													$img = $row['thumbnail_img'];
 											?>
 													<tr class="show">
 														<td> <?php echo $i; ?></td>
 														<td><?php echo $row['video_url'];   ?></td>
 														<td><?php echo $row['name'];   ?></td>
 														<td><?php echo substr($row['description'], 0, 120);  ?></td>
-														
+														<td><img src="<?php echo $img;   ?>" height="150" width="150"></td>
 														<td><?php echo date('d-m-Y', strtotime($row['created_at'])); ?></td>
 														<td>
 															<a href="video-create.php?id=<?php echo $row['id']; ?>" class="btn btn-outline-success btn-sm"><i class="fas fa-edit"></i></a>

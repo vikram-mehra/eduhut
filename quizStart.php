@@ -5,9 +5,8 @@
    header("Location:login.php");
 }
  $id=$_GET['examid'];
- $fetchqry = "SELECT * FROM `tbl_question_master` where exam_id=$id"; 
+ $fetchqry = "SELECT * FROM `tbl_question_master` where exam_id=$id and status=1"; 
  $result=mysqli_query($con,$fetchqry);
- 
  $fetchqrys = "SELECT * FROM `tbl_exam_master` where id=$id"; 
  $resultq=mysqli_query($con,$fetchqrys);
  $qrows=mysqli_fetch_assoc($resultq);
@@ -135,13 +134,15 @@
 </script>
 
    <script>
+	console.log("que")
     var questions = [
     <?php
     $i=1;
     while($row=mysqli_fetch_assoc($result)) 
 	{
 	?>
-	    {mcqno:"<?php echo $row['mcq_sno']; ?>",questionno:"<?php echo $row['id']; ?>",question:"<?php echo  'Q:-'.$i++.' '.$row['question_name']; ?>",choices: ["<?php echo  $row['option1']; ?>", "<?php echo  $row['option2']; ?>", "<?php echo  $row['option3']; ?>", "<?php echo  $row['option4']; ?>"],correctAnswer:"<?php  if($row['correct_ans'] == 'A'){echo '0';}elseif($row['correct_ans'] == 'B'){echo '1';}elseif($row['correct_ans'] == 'C'){echo '2';}elseif($row['correct_ans'] == 'D'){echo '3';} ?>"},
+	
+	    {mcqno:"<?php echo $row['mcq_sno']; ?>",questionno:"<?php echo $row['id']; ?>",question:"<?php echo  'Q:-'.$i++.' '.$row['question_name']; ?>",choices: ["<?php echo str_replace('"', '', $row['option1']) ; ?>", "<?php echo  str_replace('"', '', $row['option2']); ?>", "<?php echo  str_replace('"', '', $row['option3']); ?>", "<?php echo  str_replace('"', '', $row['option4']); ?>"],correctAnswer:"<?php  if($row['correct_ans'] == 'A'){echo '0';}elseif($row['correct_ans'] == 'B'){echo '1';}elseif($row['correct_ans'] == 'C'){echo '2';}elseif($row['correct_ans'] == 'D'){echo '3';} ?>"},
 	<?php
 	}
     ?>
